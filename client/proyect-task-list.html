@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task list</title>
+</head>
+<body>
+  <header>To do list</header>
+  <div class="add-task-section">
+    <label for="new-task">Tarea</label>
+    <input type="text" id="new-task">
+    <button id="add-task-btn">Añadir</button>
+  </div>
+  <div class="tasks">
+    <span>Tareas</span>
+    <div id="task-list"></div>
+  </div>
+  <script>
+    const inputTask = document.querySelector('#new-task');
+    const btnAddTask = document.querySelector('#add-task-btn');
+    const divTaskList = document.querySelector('#task-list')
+    let taskList = []
+
+    btnAddTask.addEventListener('click', addTask)
+    
+    function addTask(){
+      let inputContent = inputTask.value
+      taskList.push(inputContent);
+      updateList()
+    };
+    
+    function updateList(){
+      divTaskList.innerHTML = ''
+      taskList.forEach(task => {
+      divTaskList.innerHTML += `<li>${task} <input type="checkbox"></li>`
+    })
+    };
+  </script>
+</body>
+</html>

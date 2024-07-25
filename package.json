@@ -1,7 +1,7 @@
 {
   "name": "js-arrays",
   "version": "1.0.0",
-  "description": "",
+  "description": "curso 'manipulacion de arrays con js'",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,13 +11,13 @@
     "url": "git+https://github.com/platzi/curso-manipulacion-de-arrays.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Reymundo Figueroa",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/platzi/curso-manipulacion-de-arrays/issues"
   },
   "homepage": "https://github.com/platzi/curso-manipulacion-de-arrays#readme",
   "dependencies": {
-    "http-server": "^0.12.3"
+    "http-server": "^14.1.1"
   }
 }
