@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>forEach()</title>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    const products = [
+    { title: 'Burguer', price: 75},
+    { title: 'Pizza', price: 198},
+    { title: 'Chinese food', price: 240}
+    ]
+    const app = document.querySelector('#app');
+    const list = products.map(product => {
+      return `<li>${product.title} - ${product.price}</li>`
+    });
+    app.innerHTML = list.join('')
+    console.log(list)
+  </script>
+</body>
+</html>
