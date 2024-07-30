@@ -35,3 +35,26 @@ const rta3 = orders.map(item => {
 })
 console.log('rta3', rta3)
 console.log('original', orders)
+
+/**
+
+El spread operator en JavaScript se representa con tres puntos (...). 
+Se utiliza para expandir elementos de un array o propiedades de un 
+objeto en lugares donde se esperan múltiples elementos o argumentos.
+
+Por ejemplo:
+
+En arrays:
+JavaScript
+
+const arr1 = [1, 2, 3];
+const arr2 = [...arr1, 4, 5]; // [1, 2, 3, 4, 5]
+
+En objetos:
+JavaScript
+
+const obj1 = { a: 1, b: 2 };
+const obj2 = { ...obj1, c: 3 }; // { a: 1, b: 2, c: 3 }
+
+
+ */
